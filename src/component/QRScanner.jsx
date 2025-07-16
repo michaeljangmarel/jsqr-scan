@@ -11,7 +11,7 @@ const QRScanner = () => {
     const startCamera = async () => {
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: "environment" } // Use rear camera if available
+          video: { facingMode: "environment" }  
         });
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
@@ -72,8 +72,7 @@ const QRScanner = () => {
           style={{ width: '100%', maxWidth: '400px', height: 'auto' }}
         />
 
-        {/* Hidden Canvas for QR Detection */}
-        <canvas
+         <canvas
           ref={canvasRef}
           style={{ display: 'none' }}
         />
@@ -91,4 +90,4 @@ const QRScanner = () => {
   );
 };
 
-export default QRScanner;
+export default QRScanner;   
