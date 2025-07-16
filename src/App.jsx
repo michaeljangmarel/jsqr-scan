@@ -1,6 +1,6 @@
 import './App.css'
-import QRScanner from './assets/QrScanner'
-
+import QRScanner from './component/QRScanner'
+ 
 function App() {
  
   return (
